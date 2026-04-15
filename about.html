@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lakshmiharam Builders – About</title>
+<meta name="description" content="Learn about Lakshmiharam Builders in Virudhunagar. Discover our mission, 10+ years of expertise, and commitment to building quality homes for you.">
+<title>Lakshmiharam Builders | 10+ Yrs Exp in Virudhunagar</title>
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="apple-touch-icon" href="images/logo.png">
 
 <!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -83,7 +86,7 @@ body {
 .hero-bg{
   position: absolute;
   inset: 0;
-  background-image: url("images/fire.jpg");
+  background-image: url("images/about/fire.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1349,6 +1352,7 @@ section {
     #f2c94c 38%,      /* BLACK */
     #f2c94c 100%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1362,6 +1366,7 @@ section {
     #f2c94c 45%,
     #f2c94c 100%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2106,12 +2111,12 @@ html, body {
   }
 
   .about-crane {
-    width: 260px;        /* mobile-safe size */
-    right: -160px;       /* full outside pogama */
+    width: 260px;
+    right: -160px;
     top: 140px;
     opacity: 0.22;
     z-index: 1;
-    transform: none;     /* animation glitch avoid */
+    transform: none;
   }
 }
 .contact-fab {
@@ -2132,16 +2137,55 @@ html, body {
 
 /* Positioning */
 .whatsapp {
-  bottom: 90px;   /* First button (upper) */
+  bottom: 90px;
 }
 
 .call {
-  bottom: 20px;   /* Second button (lower) */
+  bottom: 20px;
 }
+
+.keyword-grid ul li a {
+  text-decoration: none;
+  color: inherit; 
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.keyword-grid ul li a:hover {
+  color: var(--identity); 
+  transform: translateX(5px); 
+} 
+
+/* மெயின் கிரிட் அமைப்பு */
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* சமமான இரண்டு பகுதிகள் */
+  gap: 50px; /* வீடியோவிற்கும் டெக்ஸ்ட்டிற்கும் இடையே உள்ள இடைவெளி */
+  align-items: center; /* மேலிருந்து கீழாக நேராக வைக்க */
+}
+
+/* வீடியோவின் அளவு சரியாக இருக்க */
+.about-hero-media video {
+  width: 100%;
+  border-radius: 20px; /* உங்கள் படத்தில் உள்ளது போல வளைவான ஓரங்கள் */
+  display: block;
+}
+
+/* மொபைல் போனில் பார்க்கும்போது மீண்டும் ஒன்றன் கீழ் ஒன்றாக வர */
+@media (max-width: 991px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr; /* மொபைலில் ஒரே வரிசை */
+    text-align: center;
+  }
+  
+  .about-hero-content {
+    text-align: left; /* மொபைலிலும் டெக்ஸ்ட் இடது பக்கம் இருக்க வேண்டுமென்றால் */
+  }
+}
+
 </style>
 </head>
 <body>
-  <strong>
   <!-- LANGUAGE TOGGLE -->
 <div class="language-toggle">
     <button class="lang-btn" onclick="switchLanguage('ta')">தமிழ்</button>
@@ -2200,10 +2244,10 @@ html, body {
         <span class="v"></span>
       </div>
 
-      <h1 data-english="About Our Company" 
+      <h2 data-english="About Our Company" 
           data-tamil="எங்கள் நிறுவனம் பற்றி">
         About Our Company
-      </h1>
+      </h2>
       
       <p data-english="We are committed to delivering high-quality construction solutions that combine innovation, reliability, and excellence to bring your vision to life." 
          data-tamil="புதுமை, நம்பகத்தன்மை மற்றும் சிறப்பு ஆகியவற்றை இணைத்து உயர் தர கட்டுமான தீர்வுகளை வழங்க உறுதிபூண்டுள்ளோம், உங்கள் பார்வையை வாழ்க்கையில் கொண்டுவருவதற்காக.">
@@ -2215,7 +2259,7 @@ html, body {
 
   <!-- HERO LOGO -->
 <div class="hero-logo">
-  <img src="logo.png" alt="Lakshmiharam Builders Logo" 
+  <img src="images/logo.png" alt="Lakshmiharam Builders Logo" 
        data-english="Lakshmiharam Builders Logo"
        data-tamil="லக்ஷ்மிஹரம் பில்டர்ஸ் லோகோ">
 </div>
@@ -2225,30 +2269,32 @@ html, body {
 <section class="about-hero-new">
   <div class="about-hero-wrap about-hero-grid">
 
-    <!-- LEFT -->
     <div class="about-hero-media">
       <video autoplay muted loop playsinline>
-        <source src="3D-3.mp4" type="video/mp4">
+        <source src="images/about/3D-2.mp4" type="video/mp4">
       </video>
     </div>
  
-    <!-- RIGHT -->
     <div class="about-hero-content">
-      <span class="hero-tag" data-english="ABOUT LAKSHMIHARAM BUILDERS" 
-            data-tamil="லக்ஷ்மிஹரம் பில்டர்ஸ் பற்றி">
-        ABOUT LAKSHMIHARAM BUILDERS
-      </span>
+      <h1 class="hero-tag" 
+          data-english="About Lakshmiharam Builders | Best Builders in Virudhunagar" 
+          data-tamil="லக்ஷ்மிஹரம் பில்டர்ஸ் பற்றி | விருதுநகரின் சிறந்த பில்டர்ஸ்">
+        About Lakshmiharam Builders
+      </h1>
 
-      <h1 class="about-hero-title" 
+      <h2 class="about-hero-title" 
           data-english="<span>Building With Purpose</span><span>Growing With Integrity</span>" 
           data-tamil="<span>கட்டிடங்களை நோக்கத்துடன் கட்டுவது</span><span>நேர்மையுடன் வளர்வது</span>">
         <span>Building With Purpose</span>
         <span>Growing With Integrity</span>
-      </h1>
+      </h2>
 
-      <p data-english="Lakshmiharam Builders was founded with a simple belief — construction is not just about buildings, but about people, trust, and long-term value. What began as a focused and passionate team has grown into a reliable construction partner delivering residential, commercial, and turnkey projects with uncompromising quality." 
+      <p data-english="Lakshmiharam Builders was founded with a simple belief — construction is not just about buildings, but about people, trust, and long-term value. What began as a focused and passionate team has grown into a reliable construction partner delivering residential, commercial, and turnkey projects with uncompromising quality."
+
          data-tamil="லக்ஷ்மிஹரம் பில்டர்ஸ் ஒரு உறுதியான நம்பிக்கையுடன் நிறுவப்பட்டது — கட்டுமானம் என்பது சுவர், கம்பி மட்டும் இல்லை; மக்களின் கனவு, நம்பிக்கை மற்றும் நீண்டகால மதிப்பை உருவாக்குவது தான். ஆரம்பத்தில் ஒரு ஆர்வமுள்ள சிறிய குழுவாக இருந்தோம். இன்று, வீடுகள், வணிகக் கட்டிடங்கள் மற்றும் டர்ன்கி திட்டங்களை உயர்ந்த தரத்துடன், நேர்மையுடன் செய்து கொடுக்கும் ஒரு நம்பகமான கட்டுமான நிறுவனமாக வளர்ந்துள்ளோம்.">
+
         Lakshmiharam Builders was founded with a strong belief — construction is not just about buildings, but about people, trust, and long-term value. What began as a focused and passionate team has grown into a reliable construction partner delivering residential, commercial, and turnkey projects with uncompromising quality.
+
       </p>
     </div>
 
@@ -2257,7 +2303,7 @@ html, body {
 
 <section class="about-content">
  <!-- Decorative crane -->
-  <img src="crane.png" alt="Construction Crane" class="about-crane">
+  <img src="images/about/crane.png" alt="Lakshmiharam Builders construction crane at work in Virudhunagar" class="about-crane">
 
   <div class="about-block">
     <div class="about-tit">
@@ -2312,12 +2358,12 @@ html, body {
 
     <!-- LEFT -->
     <div class="about-left">
-      <h1 class="about-title" 
+      <h2 class="about-title" 
           data-english="Raising Standards with<br>Every Project" 
           data-tamil="ஒவ்வொரு திட்டத்திலும்<br>தரங்களை உயர்த்துகிறோம்">
         Raising Standards with<br>
         Every Project
-      </h1>
+      </h2>
 
       <p class="about-desc" 
          data-english="We build every project on decades of trust, raising the bar not only in quality but also in how people experience home. From thoughtful design to precise execution, every detail is crafted to deliver lasting value, comfort, and confidence for generations to come." 
@@ -2339,8 +2385,8 @@ html, body {
       </p>
 
       <div class="about-image">
-        <img src="https://www.kgbuilders.com/build/assets/mission-C7l-Kpnq.jpg" 
-             alt="Mission Vision Values" 
+        <img src="images/about/mission.jpg" 
+             alt="Lakshmiharam Builders - Our Mission, Vision, and Values" 
              data-english="Mission Vision Values" 
              data-tamil="குறிக்கோள் பார்வை மதிப்புகள்">
       </div>
@@ -2436,7 +2482,7 @@ html, body {
       <div class="step-number">1</div>
 
       <div class="step-card">
-        <img src="https://media.istockphoto.com/id/1485996637/photo/top-view-team-engineer-building-inspection-use-tablet-computer-and-blueprint-working-at.jpg?s=612x612&w=0&k=20&c=HvHuZc-49SNor9cEL13I8c7esfq-wNlaULYhWC7YtZI=" 
+        <img src="images/about/care.jpg" 
              alt="We Give a Care" 
              data-english="We Give a Care" 
              data-tamil="நாங்கள் அக்கறை காட்டுகிறோம்">
@@ -2478,7 +2524,7 @@ html, body {
       <div class="step-number">2</div>
 
       <div class="step-card">
-        <img src="https://t4.ftcdn.net/jpg/05/83/07/25/360_F_583072516_1U8WT01OXZRXAETqXNe2XBhnR8hyzIoS.jpg" 
+        <img src="images/about/hand.jpg" 
              alt="Radical Integrity" 
              data-english="Radical Integrity" 
              data-tamil="அடிப்படை நேர்மை">
@@ -2522,7 +2568,7 @@ html, body {
   <div class="step-number">3</div>
 
   <div class="step-card">
-    <img src="https://png.pngtree.com/thumb_back/fw800/background/20251108/pngtree-diverse-team-of-architects-and-engineers-collaborating-on-a-digital-blueprint-image_20267622.webp" 
+    <img src="images/about/people.webp" 
          alt="People First" 
          data-english="People First" 
          data-tamil="மக்கள் முதல்">
@@ -2564,7 +2610,7 @@ html, body {
   <div class="step-number">4</div>
 
   <div class="step-card">
-    <img src="https://thumbs.dreamstime.com/b/ai-generated-flat-lay-composition-construction-safety-gear-professional-tools-placed-architectural-blueprints-428276685.jpg" 
+    <img src="images/about/process.webp" 
          alt="Process Perfection" 
          data-english="Process Perfection" 
          data-tamil="செயல்முறை முழுமை">
@@ -2608,7 +2654,7 @@ html, body {
   <div class="step-number">5</div>
 
   <div class="step-card">
-    <img src="https://thumbs.dreamstime.com/b/construction-team-having-discussion-work-meeting-group-multiracial-male-female-architects-builders-wearing-safety-hard-400423700.jpg" 
+    <img src="images/about/empower.webp" 
          alt="Empower One Another" 
          data-english="Empower One Another" 
          data-tamil="ஒருவருக்கொருவர் அதிகாரமளிக்கவும்">
@@ -2651,7 +2697,7 @@ html, body {
   <div class="step-number">6</div>
 
   <div class="step-card">
-    <img src="https://www.shutterstock.com/image-vector/construction-safety-first-concept-worker-600nw-2636401341.jpg" 
+    <img src="images/about/safety.webp" 
          alt="Safety & Responsibility" 
          data-english="Safety & Responsibility" 
          data-tamil="பாதுகாப்பு & பொறுப்பு">
@@ -2704,8 +2750,8 @@ html, body {
 
   <div class="team-grid">
     <div class="team-card">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdrdKEavfsLr71LLpjhHSORXJE4iGIjJIwmg&s" 
-           alt="Founder / Director" 
+      <img src="images/about/person.png" 
+           alt="Founder and Director of Lakshmiharam Builders" 
            data-english="Founder / Director" 
            data-tamil="நிறுவனர் / இயக்குநர்">
       <h4 data-english="Founder / Director" 
@@ -2719,7 +2765,7 @@ html, body {
     </div>
 
     <div class="team-card">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdrdKEavfsLr71LLpjhHSORXJE4iGIjJIwmg&s" 
+      <img src="images/about/person.png" 
            alt="Project Manager" 
            data-english="Project Manager" 
            data-tamil="திட்ட மேலாளர்">
@@ -2734,7 +2780,7 @@ html, body {
     </div>
 
     <div class="team-card">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdrdKEavfsLr71LLpjhHSORXJE4iGIjJIwmg&s" 
+      <img src="images/about/person.png" 
            alt="Engineering Team" 
            data-english="Engineering Team" 
            data-tamil="பொறியியல் குழு">
@@ -2785,7 +2831,7 @@ html, body {
 
     <div class="why-us-video">
       <video autoplay muted loop playsinline>
-        <source src="3D.mp4" type="video/mp4">
+        <source src="images/about/3D.mp4" type="video/mp4">
       </video>
     </div>
 
@@ -2898,117 +2944,76 @@ html, body {
 
   <!-- KEYWORDS -->
   <div class="footer-keywords">
-    <h4
-      data-english="TOP SEARCH KEYWORDS"
-      data-tamil="முக்கிய தேடல் சொற்கள்">
-      TOP SEARCH KEYWORDS
-    </h4>
+  <h3 data-english="TOP SEARCH KEYWORDS" data-tamil="முக்கிய தேடல் சொற்கள்">
+    TOP SEARCH KEYWORDS
+  </h3>
 
-    <div class="keyword-grid">
-  <ul>
-    <li
-      data-english="Best builders in Virudhunagar"
-      data-tamil="விருதுநகரின் நம்பகமான மற்றும் சிறந்த கட்டுமான
-நிறுவனம்">
-      Best builders in Virudhunagar
-    </li>
-    <li
-      data-english="Steel building construction company in Virudhunagar"
-      data-tamil="விருதுநகரில் தரமான ஸ்டீல் கட்டிட தீர்வுகள் வழங்கும்
-நிறுவனம்">
-      Steel building construction company in Virudhunagar
-    </li>
-    <li
-      data-english="Construction company in Virudhunagar"
-      data-tamil="வீடு மற்றும் வணிக கட்டுமானத்தில் முன்னணி —
-விருதுநகர்">
-      Construction company in Virudhunagar
-    </li>
-    <li
-      data-english="Top 20 construction companies in Virudhunagar"
-      data-tamil="விருதுநகரின் முன்னணி 20 கட்டுமான நிறுவனங்களில்
-ஒன்று">
-      Top 20 construction companies in Virudhunagar
-    </li>
-  </ul>
+  <div class="keyword-grid">
+    <ul>
+      <li data-english="Best builders in Virudhunagar" data-tamil="விருதுநகரின் சிறந்த கட்டுமான நிறுவனம்">
+    <a href="about.html">Best builders in Virudhunagar</a>
+</li>
+      <li data-english="Steel building construction company in Virudhunagar" data-tamil="விருதுநகரில் தரமான ஸ்டீல் கட்டிட தீர்வுகள் வழங்கும் நிறுவனம்">
+        Steel building construction company in Virudhunagar
+      </li>
+      <li data-english="Construction company in Virudhunagar" data-tamil="வீடு மற்றும் வணிக கட்டுமானத்தில் முன்னணி">
+    <a href="service.html">Construction company in Virudhunagar</a>
+</li>
+      <li data-english="Top 20 construction companies in Virudhunagar" data-tamil="விருதுநகரின் முன்னணி 20 கட்டுமான நிறுவனங்களில் ஒன்று">
+        Top 20 construction companies in Virudhunagar
+      </li>
+    </ul>
 
-  <ul>
-    <li
-      data-english="Builders in Virudhunagar"
-      data-tamil="விருதுநகரில் நம்பகமான கட்டுமான சேவைகள்">
-      Builders in Virudhunagar
-    </li>
-    <li
-      data-english="Building construction company in Virudhunagar"
-      data-tamil="விருதுநகரில் அனுபவமிக்க கட்டிடக் கட்டுமான நிறுவனம்">
-      Building construction company in Virudhunagar
-    </li>
-    <li
-      data-english="Top construction companies in Virudhunagar"
-      data-tamil="விருதுநகரின் சிறந்த மற்றும் முன்னணி கட்டுமான நிறுவனர்கள்">
-      Top construction companies in Virudhunagar
-    </li>
-  </ul>
+    <ul>
+      <li data-english="Builders in Virudhunagar" data-tamil="விருதுநகரில் நம்பகமான கட்டுமான சேவைகள்">
+        Builders in Virudhunagar
+      </li>
+      <li data-english="Building construction company in Virudhunagar" data-tamil="விருதுநகரில் அனுபவமிக்க கட்டிடக் கட்டுமான நிறுவனம்">
+        Building construction company in Virudhunagar
+      </li>
+      <li data-english="Top construction companies in Virudhunagar" data-tamil="விருதுநகரின் சிறந்த மற்றும் முன்னணி கட்டுமான நிறுவனர்கள்">
+        Top construction companies in Virudhunagar
+      </li>
+    </ul>
 
-  <ul>
-    <li
-      data-english="Construction companies in Virudhunagar"
-      data-tamil="விருதுநகரில் நம்பிக்கைக்குரிய உயர்தர வீடு கட்டுமான சேவைகள்">
-      Construction companies in Virudhunagar
-    </li>
-    <li
-      data-english="Home builders in Virudhunagar"
-      data-tamil="விருதுநகரில் தரமும் அழகும் கொண்ட கட்டுமான தீர்வுகள்">
-      Home builders in Virudhunagar
-    </li>
-    <li
-      data-english="Premium Builder in Virudhunagar"
-      data-tamil="விருதுநகரில் உயர்தர கட்டுமான நிறுவனம்">
-      Premium Builder in Virudhunagar
-    </li>
-    <li
-      data-english="Leading builders in Virudhunagar"
-      data-tamil="விருதுநகரில் முன்னணி பில்டர்கள்">
-      Leading builders in Virudhunagar
-    </li>
-    <li
-      data-english="Leading construction companies in Virudhunagar"
-      data-tamil="விருதுநகரில் முன்னணி கட்டுமான நிறுவனங்கள்">
-      Leading construction companies in Virudhunagar
-    </li>
-  </ul>
+    <ul>
+      <li data-english="Construction companies in Virudhunagar" data-tamil="விருதுநகரில் நம்பிக்கைக்குரிய உயர்தர வீடு கட்டுமான சேவைகள்">
+        Construction companies in Virudhunagar
+      </li>
+      <li data-english="Home builders in Virudhunagar" data-tamil="விருதுநகரில் வீடு கட்டும் பில்டர்கள்">
+    <a href="project.html">Home builders in Virudhunagar</a>
+</li>
+      <li data-english="Premium Builder in Virudhunagar" data-tamil="விருதுநகரில் உயர்தர கட்டுமான நிறுவனம்">
+        Premium Builder in Virudhunagar
+      </li>
+      <li data-english="Leading builders in Virudhunagar" data-tamil="விருதுநகரில் முன்னணி பில்டர்கள்">
+        Leading builders in Virudhunagar
+      </li>
+      <li data-english="Leading construction companies in Virudhunagar" data-tamil="விருதுநகரில் முன்னணி கட்டுமான நிறுவனங்கள்">
+        Leading construction companies in Virudhunagar
+      </li>
+    </ul>
 
-  <ul>
-    <li
-      data-english="Best construction companies in Virudhunagar"
-      data-tamil="விருதுநகரில் சிறந்த கட்டுமான நிறுவனங்கள்">
-      Best construction companies in Virudhunagar
-    </li>
-    <li
-      data-english="Home builders and developers in Virudhunagar"
-      data-tamil="விருதுநகரில் வீடு கட்டுபவர்கள் மற்றும் டெவலப்பர்கள்">
-      Home builders and developers in Virudhunagar
-    </li>
-    <li
-      data-english="House Builders in Virudhunagar"
-      data-tamil="விருதுநகரில் வீடு கட்டும் பில்டர்கள்">
-      House Builders in Virudhunagar
-    </li>
-    <li
-      data-english="Construction builders in Virudhunagar"
-      data-tamil="விருதுநகரில் கட்டுமான பில்டர்கள்">
-      Construction builders in Virudhunagar
-    </li>
-    <li
-      data-english="Top 10 construction companies in Virudhunagar"
-      data-tamil="விருதுநகரில் சிறந்த 10 கட்டுமான நிறுவனங்கள்">
-      Top 10 construction companies in Virudhunagar
-    </li>
-  </ul>
+    <ul>
+      <li data-english="Best construction companies in Virudhunagar" data-tamil="விருதுநகரில் சிறந்த கட்டுமான நிறுவனங்கள்">
+        Best construction companies in Virudhunagar
+      </li>
+      <li data-english="Home builders and developers in Virudhunagar" data-tamil="விருதுநகரில் வீடு கட்டுபவர்கள் மற்றும் டெவலப்பர்கள்">
+        Home builders and developers in Virudhunagar
+      </li>
+      <li data-english="House Builders in Virudhunagar" data-tamil="விருதுநகரில் வீடு கட்டும் பில்டர்கள்">
+        House Builders in Virudhunagar
+      </li>
+      <li data-english="Construction builders in Virudhunagar" data-tamil="விருதுநகரில் கட்டுமான பில்டர்கள்">
+        Construction builders in Virudhunagar
+      </li>
+      <li data-english="Top 10 construction companies in Virudhunagar" data-tamil="விருதுநகரில் சிறந்த 10 கட்டுமான நிறுவனங்கள்">
+        Top 10 construction companies in Virudhunagar
+      </li>
+    </ul>
+  </div>
 </div>
 
-  
-  </div>
 
   <!-- BRAND STRIP -->
   <div class="footer-brand">
@@ -3037,12 +3042,12 @@ html, body {
 </section>
 <!-- WhatsApp Button -->
 <a href="https://wa.me/918144442255" class="contact-fab whatsapp" target="_blank">
-  <img src="whatsapp.png" alt="WhatsApp">
+  <img src="images/whatsapp.png" alt="WhatsApp">
 </a>
 
 <!-- Call Button -->
 <a href="tel:+918144442255" class="contact-fab call">
-  <img src="contact.png" alt="Contact">
+  <img src="images/contact.png" alt="Contact">
 </a>
 
 <script>
@@ -3509,6 +3514,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 </script>
-</strong>
 </body>
 </html>

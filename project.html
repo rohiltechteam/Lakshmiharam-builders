@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lakshmiharam Builders – Responsive GSAP Hero</title>
+<meta name="description" content="Explore our portfolio of successfully completed residential and commercial construction projects in Virudhunagar by Lakshmiharam Builders.">
+<title>Our Completed Projects | Lakshmiharam Builders Virudhunagar</title>
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="apple-touch-icon" href="images/logo.png">
 
 <!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -33,7 +36,7 @@ body {
 .hero-bg{
   position: absolute;
   inset: 0;
-  background-image: url("images/house_warming.jpg");
+  background-image: url("images/project/house_warming.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1897,10 +1900,38 @@ html, body {
 .call {
   bottom: 20px;   /* Second button (lower) */
 }
+
+.keyword-grid ul li a {
+  text-decoration: none;
+  color: inherit; 
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.keyword-grid ul li a:hover {
+  color: var(--identity); 
+  transform: translateX(5px); 
+}
+
+.video-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.3); /* video mela light shadow */
+}
+
+.v-label {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  border: 1px solid rgba(255,255,255,0.5);
+  background: rgba(0,0,0,0.5);
+}
+
 </style>
 </head>
 <body>
-  <strong>
 <section class="hero hero-section">
   <!-- LANGUAGE TOGGLE -->
   <div class="language-toggle">
@@ -1956,20 +1987,19 @@ html, body {
         <span class="v"></span>
       </div>
 
-      <h1 data-english="Our Construction Projects" 
-          data-tamil="எங்கள் கட்டுமான திட்டங்கள்">
-        Explore Our Construction Projects
-      </h1>
-      <p data-english="Discover how Lakshmiharam Constructions turns ideas into reality through quality craftsmanship, smart design, and reliable execution."
-         data-tamil="லக்ஷ்மிஹரம் கான்ஸ்ட்ரக்ஷன்ஸ் எப்படி யோசனைகளை உயர்தர வேலைத்திறன், புத்திசாலித்தனமான வடிவமைப்பு மற்றும் நம்பகமான செயலாக்கத்தின் மூலம் நிஜமாக மாற்றுகிறது என்பதைக் கண்டறியுங்கள்.">
-        Discover how Lakshmiharam Constructions turns ideas into reality through quality craftsmanship, smart design, and reliable execution.
-      </p>
+      <h1 data-english="Top Construction Projects in Virudhunagar" data-tamil="விருதுநகரின் சிறந்த கட்டுமான திட்டங்கள்">
+  Top Construction Projects in Virudhunagar
+</h1>
+<p data-english="Discover how Lakshmiharam Constructions turns ideas into reality through quality craftsmanship, smart design, and reliable execution."
+   data-tamil="லக்ஷ்மிஹரம் கான்ஸ்ட்ரக்ஷன்ஸ் எப்படி யோசனைகளை உயர்தர வேலைத்திறன், புத்திசாலித்தனமான வடிவமைப்பு மற்றும் நம்பகமான செயலாக்கத்தின் மூலம் நிஜமாக மாற்றுகிறது என்பதைக் கண்டறியுங்கள்.">
+    Discover how Lakshmiharam Constructions turns ideas into reality through quality craftsmanship, smart design, and reliable execution.
+</p>
     </div>
   </div>
 
   <!-- HERO LOGO -->
   <div class="hero-logo">
-    <img src="logo.png" 
+    <img src="images/logo.png" 
          alt="Lakshmiharam Builders Logo"
          data-english="Lakshmiharam Builders Logo"
          data-tamil="லக்ஷ்மிஹரம் பில்டர்ஸ் லோகோ">
@@ -2000,8 +2030,8 @@ html, body {
   <div class="category-grid">
     <div class="category-card">
       <div class="icon-box">🏠</div>
-      <h3 data-english="Residential Homes" data-tamil="குடியிருப்பு வீடுகள்">Residential Homes</h3>
-      <p data-english="Comfortable and well-planned residential constructions designed for long-term living and everyday functionality."
+<h3 data-english="Residential House Construction" data-tamil="குடியிருப்பு வீடுகள் கட்டுமானம்">Residential House Construction</h3>      
+<p data-english="Comfortable and well-planned residential constructions designed for long-term living and everyday functionality."
          data-tamil="நீண்டகால வாழ்க்கை மற்றும் அன்றாட செயல்பாட்டிற்காக வடிவமைக்கப்பட்ட வசதியான மற்றும் நன்கு திட்டமிடப்பட்ட குடியிருப்பு கட்டுமானங்கள்.">
         Comfortable and well-planned residential constructions designed for long-term living and everyday functionality.
       </p>
@@ -2009,7 +2039,7 @@ html, body {
 
     <div class="category-card">
       <div class="icon-box">🏢</div>
-      <h3 data-english="Commercial Buildings" data-tamil="வணிக கட்டிடங்கள்">Commercial Buildings</h3>
+      <h3 data-english="Commercial Building Contractors" data-tamil="வணிக கட்டிட ஒப்பந்ததாரர்கள்">Commercial Building Contractors</h3>
       <p data-english="Durable commercial structures planned to support business needs with efficient layouts."
          data-tamil="திறமையான தளவமைப்புகளுடன் வணிகத் தேவைகளை ஆதரிக்கத் திட்டமிடப்பட்ட நீடித்த வணிக கட்டமைப்புகள்.">
         Durable commercial structures planned to support business needs with efficient layouts.
@@ -2018,7 +2048,7 @@ html, body {
 
     <div class="category-card">
       <div class="icon-box">🏬</div>
-      <h3 data-english="Shops & Office Spaces" data-tamil="கடைகள் & அலுவலக இடங்கள்">Shops & Office Spaces</h3>
+      <h3 data-english="Modern Office Interior & Construction" data-tamil="நவீன அலுவலகம் மற்றும் கடை கட்டுமானம்">Modern Office Interior & Construction</h3>
       <p data-english="Professional shop and office spaces balancing appearance, usability, and durability."
          data-tamil="தோற்றம், பயன்பாடு மற்றும் நீடித்த தன்மை ஆகியவற்றை சமநிலைப்படுத்தும் தொழில்முறை கடை மற்றும் அலுவலக இடங்கள்.">
         Professional shop and office spaces balancing appearance, usability, and durability.
@@ -2031,108 +2061,144 @@ html, body {
 <!-- ================= PROJECTS VIDEO SHOWCASE ================= -->
 <section class="projects-showcase">
   <!-- Decorative crane -->
-  <img src="hook.jpg" alt="Construction Crane" class="projects-crane">
+  <img src="images/project/hook.jpg" alt="Lakshmiharam Builders construction site equipment and projects" class="projects-crane">
   
   <div class="showcase-intro">
     <h2 data-english="Our Recent Construction Works" data-tamil="எங்கள் சமீபத்திய கட்டுமான பணிகள்">
       Our Recent Construction Works
     </h2>
-    <p data-english="Every Lakshmiharam project reflects our commitment to quality, durability, and practical design. Below are real site videos showcasing our completed and ongoing construction works across residential and commercial spaces."
-       data-tamil="ஒவ்வொரு லக்ஷ்மிஹரம் திட்டமும் தரம், நீடித்த தன்மை மற்றும் நடைமுறை வடிவமைப்புக்கான எங்கள் அர்ப்பணிப்பை பிரதிபலிக்கிறது. குடியிருப்பு மற்றும் வணிக இடங்களில் எங்கள் நிறைவுற்ற மற்றும் தொடர்கின்ற கட்டுமான பணிகளை வெளிப்படுத்தும் உண்மையான தள வீடியோக்கள் கீழே உள்ளன.">
-      Every Lakshmiharam project reflects our commitment to quality, durability, and practical design. Below are real site videos showcasing our completed and ongoing construction works across residential and commercial spaces.
+    <p data-english="Every Lakshmiharam project reflects our commitment to quality and durable construction in Virudhunagar. Below are real site videos showcasing our completed house construction and commercial building works."
+       data-tamil="ஒவ்வொரு லக்ஷ்மிஹரம் திட்டமும் விருதுநகரில் எங்களது தரமான மற்றும் நீடித்த கட்டுமான அர்ப்பணிப்பை பிரதிபலிக்கிறது. நிறைவுற்ற வீடு மற்றும் வணிக கட்டிட பணிகளின் வீடியோக்களை கீழே காணலாம்.">
+      Every Lakshmiharam project reflects our commitment to quality and durable construction in Virudhunagar.
     </p>
   </div>
 
   <div class="video-grid">
     <!-- VIDEO CARDS - All have the same structure -->
     <div class="video-card">
-      <video src="pr1.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+  <video src="images/project/video/pr1.mp4" muted loop playsinline></video>
+  <div class="video-overlay">
+     <span class="v-info">Residential Project Virudhunagar</span>
+  </div>
+</div>
+
+    <div class="video-card">
+      <video src="images/project/video/pr2.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="House Elevation" data-tamil="வீட்டின் முகப்பு தோற்றம்">House Elevation</span>
+      </div>
     </div>
 
     <div class="video-card">
-      <video src="pr2.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+      <video src="images/project/video/pr3.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="Commercial Building" data-tamil="வணிக கட்டிடம்">Commercial Building</span>
+      </div>
     </div>
 
     <div class="video-card">
-      <video src="pr3.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+      <video src="images/project/video/pr4.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="Modern Villa Design" data-tamil="நவீன வில்லா வடிவமைப்பு">Modern Villa Design</span>
+      </div>
     </div>
 
     <div class="video-card">
-      <video src="pr4.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+      <video src="images/project/video/pr5.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="Site Inspection" data-tamil="தள ஆய்வு">Site Inspection</span>
+      </div>
     </div>
 
     <div class="video-card">
-      <video src="pr5.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+      <video src="images/project/video/pr6.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="Construction Progress" data-tamil="கட்டுமான முன்னேற்றம்">Construction Progress</span>
+      </div>
     </div>
 
     <div class="video-card">
-      <video src="pr6.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+      <video src="images/project/video/pr7.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="Completed Project" data-tamil="நிறைவுற்ற திட்டம்">Completed Project</span>
+      </div>
     </div>
 
     <div class="video-card">
-      <video src="pr7.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+      <video src="images/project/video/pr8.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="Building Foundation" data-tamil="கட்டிட அடித்தளம்">Building Foundation</span>
+      </div>
     </div>
 
     <div class="video-card">
-      <video src="pr8.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+      <video src="images/project/video/pr9.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="Interior Work" data-tamil="உள் அலங்கார பணி">Interior Work</span>
+      </div>
     </div>
 
     <div class="video-card">
-      <video src="pr9.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+      <video src="images/project/video/pr10.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="Structural Design" data-tamil="கட்டமைப்பு வடிவமைப்பு">Structural Design</span>
+      </div>
     </div>
 
     <div class="video-card">
-      <video src="pr10.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+      <video src="images/project/video/pr11.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="Roofing Work" data-tamil="மேற்கூரை பணி">Roofing Work</span>
+      </div>
     </div>
 
     <div class="video-card">
-      <video src="pr11.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+      <video src="images/project/video/pr13.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="Quality Check" data-tamil="தர சோதனை">Quality Check</span>
+      </div>
     </div>
 
     <div class="video-card">
-      <video src="pr13.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+      <video src="images/project/video/pr14.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="Luxury Home" data-tamil="ஆடம்பர இல்லம்">Luxury Home</span>
+      </div>
     </div>
 
     <div class="video-card">
-      <video src="pr14.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+      <video src="images/project/video/pr15.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="Office Complex" data-tamil="அலுவலக வளாகம்">Office Complex</span>
+      </div>
     </div>
 
     <div class="video-card">
-      <video src="pr15.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+      <video src="images/project/video/pr16.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="Finished Site" data-tamil="முடிவடைந்த தளம்">Finished Site</span>
+      </div>
     </div>
 
     <div class="video-card">
-      <video src="pr16.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+      <video src="images/project/video/pr17.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="Ongoing Construction" data-tamil="நடைபெறும் கட்டுமானம்">Ongoing Construction</span>
+      </div>
     </div>
 
     <div class="video-card">
-      <video src="pr17.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+      <video src="images/project/video/pr18.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="Dream Home" data-tamil="கனவு இல்லம்">Dream Home</span>
+      </div>
     </div>
 
     <div class="video-card">
-      <video src="pr18.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
-    </div>
-
-    <div class="video-card">
-      <video src="pr19.mp4" muted loop playsinline></video>
-      <div class="video-overlay"></div>
+      <video src="images/project/video/pr19.mp4" muted loop playsinline></video>
+      <div class="video-overlay">
+        <span class="v-label" data-english="Final Handover" data-tamil="இறுதி ஒப்படைப்பு">Final Handover</span>
+      </div>
     </div>
   </div>
 </section>
@@ -2244,117 +2310,76 @@ html, body {
 
   <!-- KEYWORDS -->
   <div class="footer-keywords">
-    <h4
-      data-english="TOP SEARCH KEYWORDS"
-      data-tamil="முக்கிய தேடல் சொற்கள்">
-      TOP SEARCH KEYWORDS
-    </h4>
+  <h3 data-english="TOP SEARCH KEYWORDS" data-tamil="முக்கிய தேடல் சொற்கள்">
+    TOP SEARCH KEYWORDS
+  </h3>
 
-    <div class="keyword-grid">
-  <ul>
-    <li
-      data-english="Best builders in Virudhunagar"
-      data-tamil="விருதுநகரின் நம்பகமான மற்றும் சிறந்த கட்டுமான
-நிறுவனம்">
-      Best builders in Virudhunagar
-    </li>
-    <li
-      data-english="Steel building construction company in Virudhunagar"
-      data-tamil="விருதுநகரில் தரமான ஸ்டீல் கட்டிட தீர்வுகள் வழங்கும்
-நிறுவனம்">
-      Steel building construction company in Virudhunagar
-    </li>
-    <li
-      data-english="Construction company in Virudhunagar"
-      data-tamil="வீடு மற்றும் வணிக கட்டுமானத்தில் முன்னணி —
-விருதுநகர்">
-      Construction company in Virudhunagar
-    </li>
-    <li
-      data-english="Top 20 construction companies in Virudhunagar"
-      data-tamil="விருதுநகரின் முன்னணி 20 கட்டுமான நிறுவனங்களில்
-ஒன்று">
-      Top 20 construction companies in Virudhunagar
-    </li>
-  </ul>
+  <div class="keyword-grid">
+    <ul>
+      <li data-english="Best builders in Virudhunagar" data-tamil="விருதுநகரின் சிறந்த கட்டுமான நிறுவனம்">
+    <a href="about.html">Best builders in Virudhunagar</a>
+</li>
+      <li data-english="Steel building construction company in Virudhunagar" data-tamil="விருதுநகரில் தரமான ஸ்டீல் கட்டிட தீர்வுகள் வழங்கும் நிறுவனம்">
+        Steel building construction company in Virudhunagar
+      </li>
+      <li data-english="Construction company in Virudhunagar" data-tamil="வீடு மற்றும் வணிக கட்டுமானத்தில் முன்னணி">
+    <a href="service.html">Construction company in Virudhunagar</a>
+</li>
+      <li data-english="Top 20 construction companies in Virudhunagar" data-tamil="விருதுநகரின் முன்னணி 20 கட்டுமான நிறுவனங்களில் ஒன்று">
+        Top 20 construction companies in Virudhunagar
+      </li>
+    </ul>
 
-  <ul>
-    <li
-      data-english="Builders in Virudhunagar"
-      data-tamil="விருதுநகரில் நம்பகமான கட்டுமான சேவைகள்">
-      Builders in Virudhunagar
-    </li>
-    <li
-      data-english="Building construction company in Virudhunagar"
-      data-tamil="விருதுநகரில் அனுபவமிக்க கட்டிடக் கட்டுமான நிறுவனம்">
-      Building construction company in Virudhunagar
-    </li>
-    <li
-      data-english="Top construction companies in Virudhunagar"
-      data-tamil="விருதுநகரின் சிறந்த மற்றும் முன்னணி கட்டுமான நிறுவனர்கள்">
-      Top construction companies in Virudhunagar
-    </li>
-  </ul>
+    <ul>
+      <li data-english="Builders in Virudhunagar" data-tamil="விருதுநகரில் நம்பகமான கட்டுமான சேவைகள்">
+        Builders in Virudhunagar
+      </li>
+      <li data-english="Building construction company in Virudhunagar" data-tamil="விருதுநகரில் அனுபவமிக்க கட்டிடக் கட்டுமான நிறுவனம்">
+        Building construction company in Virudhunagar
+      </li>
+      <li data-english="Top construction companies in Virudhunagar" data-tamil="விருதுநகரின் சிறந்த மற்றும் முன்னணி கட்டுமான நிறுவனர்கள்">
+        Top construction companies in Virudhunagar
+      </li>
+    </ul>
 
-  <ul>
-    <li
-      data-english="Construction companies in Virudhunagar"
-      data-tamil="விருதுநகரில் நம்பிக்கைக்குரிய உயர்தர வீடு கட்டுமான சேவைகள்">
-      Construction companies in Virudhunagar
-    </li>
-    <li
-      data-english="Home builders in Virudhunagar"
-      data-tamil="விருதுநகரில் தரமும் அழகும் கொண்ட கட்டுமான தீர்வுகள்">
-      Home builders in Virudhunagar
-    </li>
-    <li
-      data-english="Premium Builder in Virudhunagar"
-      data-tamil="விருதுநகரில் உயர்தர கட்டுமான நிறுவனம்">
-      Premium Builder in Virudhunagar
-    </li>
-    <li
-      data-english="Leading builders in Virudhunagar"
-      data-tamil="விருதுநகரில் முன்னணி பில்டர்கள்">
-      Leading builders in Virudhunagar
-    </li>
-    <li
-      data-english="Leading construction companies in Virudhunagar"
-      data-tamil="விருதுநகரில் முன்னணி கட்டுமான நிறுவனங்கள்">
-      Leading construction companies in Virudhunagar
-    </li>
-  </ul>
+    <ul>
+      <li data-english="Construction companies in Virudhunagar" data-tamil="விருதுநகரில் நம்பிக்கைக்குரிய உயர்தர வீடு கட்டுமான சேவைகள்">
+        Construction companies in Virudhunagar
+      </li>
+      <li data-english="Home builders in Virudhunagar" data-tamil="விருதுநகரில் வீடு கட்டும் பில்டர்கள்">
+    <a href="project.html">Home builders in Virudhunagar</a>
+</li>
+      <li data-english="Premium Builder in Virudhunagar" data-tamil="விருதுநகரில் உயர்தர கட்டுமான நிறுவனம்">
+        Premium Builder in Virudhunagar
+      </li>
+      <li data-english="Leading builders in Virudhunagar" data-tamil="விருதுநகரில் முன்னணி பில்டர்கள்">
+        Leading builders in Virudhunagar
+      </li>
+      <li data-english="Leading construction companies in Virudhunagar" data-tamil="விருதுநகரில் முன்னணி கட்டுமான நிறுவனங்கள்">
+        Leading construction companies in Virudhunagar
+      </li>
+    </ul>
 
-  <ul>
-    <li
-      data-english="Best construction companies in Virudhunagar"
-      data-tamil="விருதுநகரில் சிறந்த கட்டுமான நிறுவனங்கள்">
-      Best construction companies in Virudhunagar
-    </li>
-    <li
-      data-english="Home builders and developers in Virudhunagar"
-      data-tamil="விருதுநகரில் வீடு கட்டுபவர்கள் மற்றும் டெவலப்பர்கள்">
-      Home builders and developers in Virudhunagar
-    </li>
-    <li
-      data-english="House Builders in Virudhunagar"
-      data-tamil="விருதுநகரில் வீடு கட்டும் பில்டர்கள்">
-      House Builders in Virudhunagar
-    </li>
-    <li
-      data-english="Construction builders in Virudhunagar"
-      data-tamil="விருதுநகரில் கட்டுமான பில்டர்கள்">
-      Construction builders in Virudhunagar
-    </li>
-    <li
-      data-english="Top 10 construction companies in Virudhunagar"
-      data-tamil="விருதுநகரில் சிறந்த 10 கட்டுமான நிறுவனங்கள்">
-      Top 10 construction companies in Virudhunagar
-    </li>
-  </ul>
+    <ul>
+      <li data-english="Best construction companies in Virudhunagar" data-tamil="விருதுநகரில் சிறந்த கட்டுமான நிறுவனங்கள்">
+        Best construction companies in Virudhunagar
+      </li>
+      <li data-english="Home builders and developers in Virudhunagar" data-tamil="விருதுநகரில் வீடு கட்டுபவர்கள் மற்றும் டெவலப்பர்கள்">
+        Home builders and developers in Virudhunagar
+      </li>
+      <li data-english="House Builders in Virudhunagar" data-tamil="விருதுநகரில் வீடு கட்டும் பில்டர்கள்">
+        House Builders in Virudhunagar
+      </li>
+      <li data-english="Construction builders in Virudhunagar" data-tamil="விருதுநகரில் கட்டுமான பில்டர்கள்">
+        Construction builders in Virudhunagar
+      </li>
+      <li data-english="Top 10 construction companies in Virudhunagar" data-tamil="விருதுநகரில் சிறந்த 10 கட்டுமான நிறுவனங்கள்">
+        Top 10 construction companies in Virudhunagar
+      </li>
+    </ul>
+  </div>
 </div>
 
-  
-  </div>
 
   <!-- BRAND STRIP -->
   <div class="footer-brand">
@@ -2383,12 +2408,12 @@ html, body {
 </section>
 <!-- WhatsApp Button -->
 <a href="https://wa.me/918144442255" class="contact-fab whatsapp" target="_blank">
-  <img src="whatsapp.png" alt="WhatsApp">
+  <img src="images/whatsapp.png" alt="WhatsApp">
 </a>
 
 <!-- Call Button -->
 <a href="tel:+918144442255" class="contact-fab call">
-  <img src="contact.png" alt="Contact">
+  <img src="images/contact.png" alt="Contact">
 </a>
 
 <!---------------------------------------------------------------------------------------------------------------->
@@ -2657,7 +2682,7 @@ gsap.fromTo(".showcase-intro p",
 document.addEventListener("DOMContentLoaded", () => {
 
   gsap.registerPlugin(ScrollTrigger);
-
+  
   /* 🔔 Bell ring */
   if (document.querySelector(".footer-icon i")) {
     gsap.fromTo(".footer-icon i",
@@ -2758,6 +2783,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 </script>
-</strong>
 </body>
 </html>
