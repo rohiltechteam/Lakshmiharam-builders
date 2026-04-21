@@ -7,6 +7,7 @@
 <title>Contact Lakshmiharam Builders Virudhunagar | Hire Best Builders</title>
 <link rel="icon" type="image/png" href="images/logo.png">
 <link rel="apple-touch-icon" href="images/logo.png">
+<link rel="canonical" href="https://lakshmiharam-builders.com/contact.html">
 
 <!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -1509,39 +1510,6 @@ p{
 }
 
 /* Mobile */
-@media(max-width:768px){
-  .hero-logo img{
-    width: 250px;
-  }
-}
-.hero-logo{
-  position: absolute;
-  top: -300px;                 /* hero bottom gap */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 5;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  pointer-events: none;         /* click disturb aagama */
-}
-
-.hero-logo img{
-  width: 300px;                  /* desktop size */
-  height: auto;
-  opacity: 0.95;
-
-  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.4));
-}
-
-/* Mobile */
-@media(max-width:768px){
-  .hero-logo img{
-    width: 150px;
-  }
-}
 html, body {
   overflow-x: hidden;
   max-width: 100%;
@@ -1735,6 +1703,108 @@ html, body {
   transform: translateX(5px); 
 }
 
+.contact-nap {
+  margin-top: 40px;
+  padding: 25px;
+  background: #111;
+  color: #fff;
+  border-radius: 12px;
+  line-height: 1.7;
+}
+
+.contact-nap h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #f4c542;
+}
+
+.contact-nap a {
+  color: #f4c542;
+  text-decoration: none;
+}
+
+.contact-nap a:hover {
+  text-decoration: underline;
+}
+
+/* ================= MOBILE CLEAN FIX ================= */
+@media (max-width: 768px){
+
+  body{
+    overflow-x: hidden;
+  }
+
+  /* HERO */
+  .hero,
+  .hero-section{
+    height: 100svh;
+  }
+
+  .text-box{
+    padding: 20px;
+  }
+
+  .corner{
+    width: 70px;
+    height: 70px;
+  }
+
+  /* LOGO FIX */
+  .hero-logo{
+    bottom: 10px;
+    top: auto;   /* 🔥 IMPORTANT FIX */
+  }
+
+  .hero-logo img{
+    width: 160px;
+  }
+
+  /* INTRO */
+  .intro-layout{
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .intro-right{
+    justify-content: center;
+    gap: 30px;
+  }
+
+  /* CONTACT */
+  .contact-wrapper{
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-box{
+    padding: 50px 20px;
+  }
+
+  .send-btn{
+    width: 100%;
+  }
+
+  /* SLIDER */
+  .slider-wrapper{
+    height: 65vh;
+  }
+
+  /* FOOTER */
+  .footer-container{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .keyword-grid{
+    grid-template-columns: 1fr;
+  }
+
+  /* LANGUAGE BUTTON */
+  .language-toggle{
+    right: 10px;
+    top: 10px;
+  }
+
+}
 </style>
 </head>
 
@@ -1802,9 +1872,9 @@ html, body {
         <span class="v"></span>
       </div>
 
-      <h1 data-english="Contact the Best Building Contractors in Virudhunagar" 
-    data-tamil="விருதுநகரின் சிறந்த கட்டிட ஒப்பந்ததாரர்களைத் தொடர்பு கொள்ள">
-  Contact the Best Building Contractors in Virudhunagar
+      <h1 data-english="Contact the Best Builders in Virudhunagar" 
+    data-tamil="விருதுநகரின் சிறந்த பில்டர்ஸை தொடர்பு கொள்ள">
+  Contact the Best Builders in Virudhunagar
 </h1>
 <p data-english="Let's build your dream home together. Contact Lakshmiharam Builders for reliable home construction and civil engineering services in Virudhunagar."
    data-tamil="உங்கள் கனவு இல்லத்தை ஒன்றிணைந்து உருவாக்குவோம். விருதுநகரில் நம்பகமான வீடு கட்டுமானம் மற்றும் சிவில் இன்ஜினியரிங் சேவைகளுக்கு லக்ஷ்மிஹரம் பில்டர்ஸை தொடர்பு கொள்ளுங்கள்.">
@@ -1920,6 +1990,28 @@ html, body {
      data-tamil="ஆடம்பர இல்ல கட்டுமான திட்டம் - லக்ஷ்மிஹரம் பில்டர்ஸ்">
     </div>
   </div>
+
+  <div class="contact-nap">
+  <h3 data-english="Contact Information" 
+      data-tamil="தொடர்பு தகவல்">
+    Contact Information
+  </h3>
+
+  <p>
+    <strong>Lakshmiharam Builders</strong><br>
+    3/2, Aani Muthu Pillaiyar Kovil Street,<br>
+    Sivagamipuram,<br>
+    Virudhunagar, Tamil Nadu - 626001<br><br>
+
+    <strong>Phone:</strong> 
+    <a href="tel:+918695332255">+91 86953 32255</a><br>
+
+    <strong>Email:</strong> 
+    <a href="mailto:lakshmiharam.builders@gmail.com">
+      lakshmiharam.builders@gmail.com
+    </a>
+  </p>
+</div>
 </section>
 
 <section class="footer-cta" data-lang="en">
@@ -1965,14 +2057,13 @@ html, body {
     <!-- RIGHT LOGO -->
     <div class="footer-map">
   <iframe
-    src="https://www.google.com/maps?q=3/2,%20Aani%20Muthu%20Pillaiyar%20Kovil%20Street,%20Sivagamipuram,%20Virudhunagar,%20Tamil%20Nadu%20626001&output=embed"
-    width="100%"
-    height="260"
-    style="border:0; border-radius:14px;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
+  src="https://www.google.com/maps?q=Lakshmiharam Builders, Virudhunagar&output=embed"
+  width="100%"
+  height="300"
+  style="border:0; border-radius:14px;"
+  allowfullscreen=""
+  loading="lazy">
+</iframe>
 </div>
 
   </div>
@@ -2058,9 +2149,15 @@ html, body {
       <li data-english="Top construction companies in Virudhunagar" data-tamil="விருதுநகரின் சிறந்த மற்றும் முன்னணி கட்டுமான நிறுவனர்கள்">
         Top construction companies in Virudhunagar
       </li>
+      <li data-english="Virudhunagar builders" data-tamil="விருதுநகரில் கட்டுமானர்கள்">
+  Virudhunagar builders
+</li>
     </ul>
 
     <ul>
+      <li data-english="Tamil Nadu real estate" data-tamil="தமிழ்நாடு நில உரிமைத் துறை">
+  Tamil Nadu real estate
+</li>
       <li data-english="Construction companies in Virudhunagar" data-tamil="விருதுநகரில் நம்பிக்கைக்குரிய உயர்தர வீடு கட்டுமான சேவைகள்">
         Construction companies in Virudhunagar
       </li>
@@ -2097,7 +2194,6 @@ html, body {
     </ul>
   </div>
 </div>
-
 
   <!-- BRAND STRIP -->
   <div class="footer-brand">
